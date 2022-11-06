@@ -20,6 +20,21 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
      />
+    <TextView
+        android:id="@+id/txtlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lvl"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/purp"
+        android:layout_marginRight="2dp"
+        android:paddingHorizontal="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        />
     <ImageView
         android:layout_width="match_parent"
         android:id="@+id/img_clr"

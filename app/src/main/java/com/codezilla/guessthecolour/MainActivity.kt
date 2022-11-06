@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
      lateinit var linearView1:LinearLayout
      lateinit var linearView2:LinearLayout
      lateinit var sheetLinearView:LinearLayout
+     lateinit var txtLvl:TextView
      var relativelyt:RelativeLayout?=null
     //-------------------------------------------------
 
@@ -97,6 +98,7 @@ class MainActivity : AppCompatActivity() {
             {updateColour()}
             nextLock=1
         })
+        txtLvl.setText("lvl : ${colourPointer+1}")
     }
 
     private fun setColourAttributes(clr: Colour) {
@@ -229,6 +231,7 @@ class MainActivity : AppCompatActivity() {
             ResetKeywordView()
 
             colourPointer++
+            txtLvl.setText("lvl : ${colourPointer+1}")
             var clr:Colour=colorlist.get(colourPointer)
             setColourAttributes(clr)
             setColourAndKeywords(clr)
@@ -246,6 +249,7 @@ class MainActivity : AppCompatActivity() {
         sheetLinearView=findViewById(R.id.llInput)
         relativelyt=findViewById(R.id.rlclr)
         imageMain=findViewById(R.id.img_clr)
+        txtLvl=findViewById(R.id.txtlvl)
         ResetKeywordView()
     }
 
