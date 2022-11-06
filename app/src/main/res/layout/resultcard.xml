@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        >
+        <TextView
+            android:id="@+id/txtcard1"
+            android:text="Your Answer :"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/txtcard2"
+            android:text="Correct Answer :"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txtcard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
